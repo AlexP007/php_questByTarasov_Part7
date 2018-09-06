@@ -10,14 +10,14 @@ $goods =[ [ "title" => "Телефон", "price" => 8e4, "reviews" => 107, "rati
  */
 
 function print_r($args){
-    $result = is_array($args) ? fromArrayToString($args) : $args;   // если массивБ преобразуем в строку
+    $result = is_array($args) ? fromArrayToString($args) : $args;   // если массив, преобразуем в строку
     
-    echo "<pre><code class=\"PHP\">$result</code></pre> " ; // вывод, можно ретёрн, но повторяю реализацbю print_r()
+    echo "<pre><code class=\"PHP\">$result</code></pre> " ; // вывод, можно ретёрн, но повторяю реализацию print_r()
 }
 
 /**
  * @param $arr
- * @return string строку из массива
+ * @return string строку, склеенную из всех ключей и значений $arr
  */
 function fromArrayToString($arr) {
     
